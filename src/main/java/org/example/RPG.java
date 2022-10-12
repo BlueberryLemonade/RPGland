@@ -4,13 +4,8 @@ import java.util.Scanner;
 
 public class RPG {
     public static void main(String[] args) {
-
-
-
         RPG main = new RPG();
         main.game();
-
-
     }
 
     public void game(){
@@ -23,22 +18,7 @@ public class RPG {
         int optionSelect = input.nextInt();
 
         GameLogic controller = new GameLogic();
-
         controller.run();
 
-
-
-
-
-
-
-
-
-
-
-
     }
-
-
-
 }

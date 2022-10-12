@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa24c815-edcc-452f-a26c-f5d3ddbb2894" name="Changes" comment="created hurt functions for player and enemy">
+    <list default="true" id="aa24c815-edcc-452f-a26c-f5d3ddbb2894" name="Changes" comment="General housekeeping and fixed goblin dying during strong attack bug">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Enemy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GameLogic.java" afterDir="false" />
@@ -73,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665560994955</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed bug with switch case causing both attacks to go off. Moved game logic into a run function in the GameLogic class.">
+      <created>1665607672008</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665607672008</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -91,6 +99,8 @@
     <MESSAGE value="Basic player creation initial commit" />
     <MESSAGE value="Basic combat system" />
     <MESSAGE value="created hurt functions for player and enemy" />
-    <option name="LAST_COMMIT_MESSAGE" value="created hurt functions for player and enemy" />
+    <MESSAGE value="Fixed bug with switch case causing both attacks to go off. Moved game logic into a run function in the GameLogic class." />
+    <MESSAGE value="General housekeeping and fixed goblin dying during strong attack bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="General housekeeping and fixed goblin dying during strong attack bug" />
   </component>
 </project>

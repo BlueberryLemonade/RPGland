@@ -20,46 +20,57 @@ public class GameLogic {
         System.out.println("It looks peaceful");
 
         do {
+            if(currentEnemy != null && !currentEnemy.isAlive){
+                currentEnemy = null;
+            }
             if (currentEnemy == null) {
                 currentEnemy = createEnemy();
+                System.out.println("---------------------------------------------");
                 System.out.println("A " + currentEnemy.getName() + " has appeared");
+                System.out.println("---------------------------------------------");
 
             }
             System.out.println("What would you like to do?");
-            System.out.println("1 for attack 2 for attack strongly");
+            System.out.println("1 for attack 2 for attack strongly 3 for examine enemy");
             int decision = input.nextInt();
             switch(decision){
-                case 1: System.out.println("Regular attack");
+                case 1:
+                    System.out.println("Regular attack");
                     fight(player, currentEnemy);
                     break;
-                case 2: strongFight(player, currentEnemy);
+                case 2:
+                    System.out.println("Strong attack");
+                    strongFight(player, currentEnemy);
+                    break;
+                case 3:
+                    System.out.println("Examine");
+                    System.out.println(currentEnemy.getExamineText());
                     break;
             }
-        }while(player.health > 0);
+        } while(player.health > 0);
     }
 
 
     public void fight(Player player, Enemy enemy){
-        player.hurt(enemy.power);
-        System.out.println(enemy.name + " attacked " + player.name + " for " + enemy.power + " damage." );
-        System.out.println(player.name + "Remaining health: " + player.health);
-        System.out.println("--------------------------------------");
+        player.hurt(enemy.getPower());
+        System.out.println(enemy.getName() + " attacked " + player.getName() + " for " + enemy.getPower() + " damage." );
+        System.out.println(player.getName() + " remaining health: " + player.getHealth() + "\n");
         enemy.hurt(player.getStrength());
-        if(enemy.getHp() < 0){
-            System.out.println(enemy.getName() + " has been defeated!");
+        if(!enemy.isAlive){
             currentEnemy = null;
-
         } else {
-            System.out.println(enemy.getName() + "'s health is " + enemy.hp + " after taking " + player.getStrength() + " damage");
+            System.out.println(enemy.getName() + "'s health is " + enemy.getHp() + " after taking " + player.getStrength() + " damage");
         }
     }
 
     public void strongFight(Player player, Enemy enemy){
 
-        System.out.println("Player health before attack: " + player.health);
-        player.hurt(enemy.power);
-        System.out.println("Player health after attack: " + player.health);
-        enemy.hurt(5* player.getStrength());
+        int strongDamage = 5 * player.getStrength();
+        System.out.println("Player health before attack: " + player.getHealth());
+        player.hurt(enemy.getPower());
+        System.out.println("Player health after attack: " + player.getHealth());
+        System.out.println("You deal " + strongDamage + " damage to " + enemy.getName());
+        enemy.hurt(strongDamage);
     }
 
     public Enemy createEnemy(){
@@ -68,9 +79,13 @@ public class GameLogic {
 
         Enemy goblin = new Enemy("Goblin", 10);
         Enemy kobold = new Enemy("Kobold", 5);
+        Enemy once = new Enemy();
 
+        goblin.setExamineText("A cranky goblin");
+        kobold.setExamineText("Koboldy");
         enemies.add(goblin);
         enemies.add(kobold);
+        enemies.add(once);
 
         int selection = randomPick.nextInt(2);
         return enemies.get(selection);
