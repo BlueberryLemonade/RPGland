@@ -5,10 +5,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class EnemyData implements Serializable {
+public class PlayerData implements Serializable {
 
 
-    String PATH = "C:/Development/General/BasicRPG/data/enemies.txt";
+    String PATH = "C:/Development/General/BasicRPG/data/warriors";
 
     public ArrayList<Enemy> loadEnemies(){
 

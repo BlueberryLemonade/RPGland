@@ -13,7 +13,8 @@ public class RPG {
         System.out.println("Welcome to RPGland, the land in which there is an RPG." +
                 "\n What would you like to do?" +
                 "\n 1 -- New Game" +
-                "\n 2 -- Quit");
+                "\n 2 -- Quit" +
+                "\n 3 -- Create an Enemy");
         GameLogic controller = new GameLogic();
 
         int optionSelect = input.nextInt();
@@ -22,6 +23,9 @@ public class RPG {
             case 1: controller.run();
             break;
             case 2: System.exit(0);
+            break;
+            case 3: controller.createEnemy();
+            break;
         }
 
 

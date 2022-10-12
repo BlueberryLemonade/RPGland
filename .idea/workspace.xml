@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa24c815-edcc-452f-a26c-f5d3ddbb2894" name="Changes" comment="General housekeeping and fixed goblin dying during strong attack bug">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/EnemyData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Fight.java" afterDir="false" />
+    <list default="true" id="aa24c815-edcc-452f-a26c-f5d3ddbb2894" name="Changes" comment="ability to exit the program">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/EnemyCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/PlayerData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/EnemyData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/EnemyData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Fight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Fight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GameLogic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/RPG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/RPG.java" afterDir="false" />
     </list>
@@ -89,7 +90,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665609510626</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Creating a fight class">
+      <created>1665615179095</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665615179095</updated>
+    </task>
+    <task id="LOCAL-00007" summary="ability to exit the program">
+      <created>1665615530038</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665615530038</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,6 +124,9 @@
     <MESSAGE value="created hurt functions for player and enemy" />
     <MESSAGE value="Fixed bug with switch case causing both attacks to go off. Moved game logic into a run function in the GameLogic class." />
     <MESSAGE value="General housekeeping and fixed goblin dying during strong attack bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="General housekeeping and fixed goblin dying during strong attack bug" />
+    <MESSAGE value="Creating a fight class" />
+    <MESSAGE value="ability to exit the program and housekeeping" />
+    <MESSAGE value="ability to exit the program" />
+    <option name="LAST_COMMIT_MESSAGE" value="ability to exit the program" />
   </component>
 </project>

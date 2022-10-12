@@ -7,10 +7,7 @@ import java.util.Scanner;
 
 public class GameLogic {
 
-
-
     Enemy currentEnemy = null;
-
 
     public void run(){
         Player stan = new Player("Stan", 100,2);
@@ -19,14 +16,24 @@ public class GameLogic {
 
     public void run(Player player){
         Scanner input = new Scanner(System.in);
+        ArrayList enemies = new ArrayList<>();
+
         System.out.println("It looks peaceful");
+        EnemyData enemyInfo = new EnemyData();
+        if (enemyInfo.loadEnemies() != null) {
+            enemies = enemyInfo.loadEnemies();
+            System.out.println("Found enemies");
+        } else {
+            System.out.println("No enemies found, create one: ");
+            createEnemy();
+        }
 
         do {
             if(currentEnemy != null && !currentEnemy.isAlive){
                 currentEnemy = null;
             }
             if (currentEnemy == null) {
-                currentEnemy = createEnemy();
+                currentEnemy = randomEnemy(enemies);
                 System.out.println("---------------------------------------------");
                 System.out.println("A " + currentEnemy.getName() + " has appeared");
                 System.out.println("---------------------------------------------");
@@ -52,21 +59,6 @@ public class GameLogic {
         } while(player.health > 0);
     }
 
-    //Combat between a player and an enemy with a combat log output
-    public void fight(Player player, Enemy enemy){
-
-        player.hurt(enemy.getPower());
-        System.out.println(enemy.getName() + " attacked " + player.getName() + " for " + enemy.getPower() + " damage." );
-        System.out.println(player.getName() + " remaining health: " + player.getHealth() + "\n");
-        enemy.hurt(player.getStrength());
-        //Checks to see if they survive before displaying the remaining health
-        if(!enemy.isAlive){
-            currentEnemy = null;
-        } else {
-            System.out.println(enemy.getName() + "'s health is " + enemy.getHp() + " after taking " + player.getStrength() + " damage");
-        }
-    }
-
     public void strongFight(Player player, Enemy enemy){
 
         int strongDamage = 5 * player.getStrength();
@@ -78,24 +70,22 @@ public class GameLogic {
 
     }
 
-    public Enemy createEnemy(){
-        Random randomPick = new Random();
-        List<Enemy> enemies = new ArrayList<>();
+  public Enemy randomEnemy(ArrayList<Enemy> potentialEnemies){
 
-        Enemy goblin = new Enemy("Goblin", 10);
-        Enemy kobold = new Enemy("Kobold", 5);
-        Enemy once = new Enemy();
+        Random rand = new Random();
+        int selection = rand.nextInt(potentialEnemies.size());
 
-        goblin.setExamineText("A cranky goblin");
-        kobold.setExamineText("Koboldy");
-        enemies.add(goblin);
-        enemies.add(kobold);
-        enemies.add(once);
+        return potentialEnemies.get(selection);
 
-        int selection = randomPick.nextInt(2);
-        return enemies.get(selection);
+  }
 
+    public void createEnemy(){
+        EnemyCreator creation = new EnemyCreator();
+        Enemy fresh = creation.creationEnemy();
+        System.out.println(fresh.getExamineText());
     }
+
+
 
 
 }
