@@ -25,6 +25,7 @@ public class Enemy {
 
 
 
+
     //Getters and Setters
     public int getHp() {
         return hp;
