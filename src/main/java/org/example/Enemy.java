@@ -6,6 +6,7 @@ public class Enemy {
     int power;
     String name;
 
+    //Constructors
     public Enemy(String name){
         this.name = name;
         this.hp = 10;
@@ -17,6 +18,14 @@ public class Enemy {
         this.power = 3;
     }
 
+    //Behaviors
+    public void hurt(int damage){
+        this.hp = this.hp - damage;
+    }
+
+
+
+    //Getters and Setters
     public int getHp() {
         return hp;
     }

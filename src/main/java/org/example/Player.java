@@ -31,6 +31,10 @@ public class Player {
         System.out.println("Enemy hp is now " + enemy.hp);
     }
 
+    public void hurt(int damage){
+        this.setHealth(this.health-damage);
+    }
+
 
 
 

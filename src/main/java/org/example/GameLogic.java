@@ -8,17 +8,20 @@ public class GameLogic {
 
 
     public void fight(Player player, Enemy enemy){
-        player.setHealth(player.health - enemy.power);
-        System.out.println(enemy.name + "attacked " + player.name + " for " + enemy.power + " damage." );
-        System.out.println("Remaining health: " + player.health);
+        player.hurt(enemy.power);
+        System.out.println(enemy.name + " attacked " + player.name + " for " + enemy.power + " damage." );
+        System.out.println(player.name + "Remaining health: " + player.health);
+        System.out.println("--------------------------------------");
         enemy.setHp(enemy.hp - player.getStrength());
-        System.out.println(enemy.getName() + "hp is " + enemy.hp + " after taking " + player.getStrength() + "damage");
+        System.out.println(enemy.getName() + "'s health is " + enemy.hp + " after taking " + player.getStrength() + " damage");
     }
 
     public void strongFight(Player player, Enemy enemy){
 
-        System.out.println(enemy.name + "attacked " + player.name + " for " + enemy.power + " damage." );
-        System.out.println("Remaining health: " + player.health);
+        System.out.println("Player health before attack: " + player.health);
+        player.hurt(enemy.power);
+        System.out.println("Player health after attack: " + player.health);
+        enemy.hurt(5* player.getStrength());
     }
 
     public Enemy createEnemy(){
