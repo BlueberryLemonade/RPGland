@@ -14,12 +14,17 @@ public class RPG {
                 "\n What would you like to do?" +
                 "\n 1 -- New Game" +
                 "\n 2 -- Quit");
+        GameLogic controller = new GameLogic();
 
         int optionSelect = input.nextInt();
 
+        switch(optionSelect){
+            case 1: controller.run();
+            break;
+            case 2: System.exit(0);
+        }
 
 
-        GameLogic controller = new GameLogic();
         controller.run();
 
     }
