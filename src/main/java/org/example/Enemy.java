@@ -1,6 +1,8 @@
 package org.example;
 
-public class Enemy {
+import java.io.Serializable;
+
+public class Enemy implements Serializable {
 
     int hp;
     int power;

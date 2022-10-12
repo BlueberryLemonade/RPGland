@@ -7,6 +7,8 @@ import java.util.Scanner;
 
 public class GameLogic {
 
+
+
     Enemy currentEnemy = null;
 
 
@@ -36,7 +38,7 @@ public class GameLogic {
             switch(decision){
                 case 1:
                     System.out.println("Regular attack");
-                    fight(player, currentEnemy);
+                    Fight fight = new Fight(player, currentEnemy);
                     break;
                 case 2:
                     System.out.println("Strong attack");
@@ -50,12 +52,14 @@ public class GameLogic {
         } while(player.health > 0);
     }
 
-
+    //Combat between a player and an enemy with a combat log output
     public void fight(Player player, Enemy enemy){
+
         player.hurt(enemy.getPower());
         System.out.println(enemy.getName() + " attacked " + player.getName() + " for " + enemy.getPower() + " damage." );
         System.out.println(player.getName() + " remaining health: " + player.getHealth() + "\n");
         enemy.hurt(player.getStrength());
+        //Checks to see if they survive before displaying the remaining health
         if(!enemy.isAlive){
             currentEnemy = null;
         } else {
@@ -71,6 +75,7 @@ public class GameLogic {
         System.out.println("Player health after attack: " + player.getHealth());
         System.out.println("You deal " + strongDamage + " damage to " + enemy.getName());
         enemy.hurt(strongDamage);
+
     }
 
     public Enemy createEnemy(){
