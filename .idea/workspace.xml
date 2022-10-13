@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa24c815-edcc-452f-a26c-f5d3ddbb2894" name="Changes" comment="Removed strongfight from gamelogic class">
+    <list default="true" id="aa24c815-edcc-452f-a26c-f5d3ddbb2894" name="Changes" comment="Adding data to source">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/EnemyCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/EnemyCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GameLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/RPG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/RPG.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +39,10 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RunManager">
@@ -148,7 +151,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665627552518</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Adding data to source">
+      <created>1665630866968</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1665630866968</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Adding data to source">
+      <created>1665630899824</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1665630899824</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -176,7 +193,8 @@
     <MESSAGE value="Added fight constructor modification for extra damage" />
     <MESSAGE value="Fixed the fight class to be void methods and calling from fight objects." />
     <MESSAGE value="Removed strongfight from gamelogic class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed strongfight from gamelogic class" />
+    <MESSAGE value="Adding data to source" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding data to source" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

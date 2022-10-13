@@ -79,7 +79,13 @@ public class GameLogic {
             }
         } while(player.health > 0);
     }
-  public Enemy randomEnemy(ArrayList<Enemy> potentialEnemies){
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
+    public Enemy randomEnemy(ArrayList<Enemy> potentialEnemies){
 
         Random rand = new Random();
         if (potentialEnemies != null) {
