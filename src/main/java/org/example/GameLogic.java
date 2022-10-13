@@ -19,7 +19,9 @@ public class GameLogic {
         ArrayList enemies = new ArrayList<>();
 
         System.out.println("It looks peaceful");
+        //Loading in enemies from file
         EnemyData enemyInfo = new EnemyData();
+
         if (enemyInfo.loadEnemies() != null) {
             enemies = enemyInfo.loadEnemies();
             System.out.println("Found enemies");
@@ -28,6 +30,7 @@ public class GameLogic {
             createEnemy();
         }
 
+        //Checking if enemy is still alive, if not, generating a new enemy
         do {
             if(currentEnemy != null && !currentEnemy.isAlive){
                 currentEnemy = null;
@@ -39,6 +42,7 @@ public class GameLogic {
                 System.out.println("---------------------------------------------");
 
             }
+            //The combat system. A regular attack or a strong attack.
             System.out.println("What would you like to do?");
             System.out.println("1 for attack 2 for attack strongly 3 for examine enemy");
             int decision = input.nextInt();
@@ -49,7 +53,7 @@ public class GameLogic {
                     break;
                 case 2:
                     System.out.println("Strong attack");
-                    strongFight(player, currentEnemy);
+                    Fight strongFight = new Fight(player, currentEnemy, 3);
                     break;
                 case 3:
                     System.out.println("Examine");
@@ -73,10 +77,13 @@ public class GameLogic {
   public Enemy randomEnemy(ArrayList<Enemy> potentialEnemies){
 
         Random rand = new Random();
-        int selection = rand.nextInt(potentialEnemies.size());
+        if (potentialEnemies != null) {
+          int selection = rand.nextInt(potentialEnemies.size());
 
-        return potentialEnemies.get(selection);
-
+          return potentialEnemies.get(selection);
+      } else {
+          return null;
+      }
   }
 
     public void createEnemy(){
