@@ -15,6 +15,7 @@ public class RPG {
                 "\n 1 -- New Game" +
                 "\n 2 -- Quit" +
                 "\n 3 -- Create an Enemy");
+
         GameLogic controller = new GameLogic();
 
         int optionSelect = input.nextInt();

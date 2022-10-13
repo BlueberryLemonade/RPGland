@@ -19,7 +19,6 @@ public class EnemyData implements Serializable {
 
 
             ArrayList<Enemy> enemies =  (ArrayList<Enemy>) objIn.readObject();
-            System.out.println("Loaded in " + enemies.size() + " enemies");
             objIn.close();
 
             return enemies;
