@@ -5,12 +5,13 @@ import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
+
 public class GameLogic {
 
     ArrayList<Enemy> enemiesToFight = new ArrayList<>();
 
     public void run(){
-        Player stan = new Player("Stan", 100,2);
+        Player stan = Player.Player()
         run(stan);
     }
 
