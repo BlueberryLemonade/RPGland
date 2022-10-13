@@ -19,7 +19,7 @@ public class EnemyData implements Serializable {
 
 
             ArrayList<Enemy> enemies =  (ArrayList<Enemy>) objIn.readObject();
-            System.out.println("Loaded in" + enemies.size() + " enemies");
+            System.out.println("Loaded in " + enemies.size() + " enemies");
             objIn.close();
 
             return enemies;
@@ -29,6 +29,16 @@ public class EnemyData implements Serializable {
         return null;
     }
 
+    public void saveEnemy(Enemy enemyEntry){
+        ArrayList<Enemy> enemies = loadEnemies();
+        if(enemies == null ){
+            enemies = new ArrayList<>();
+            enemies.add(enemyEntry);
+        } else {
+            enemies.add(enemyEntry);
+        }
+        saveEnemies(enemies);
+    }
     public void saveEnemies(List<Enemy> enemies){
 
 

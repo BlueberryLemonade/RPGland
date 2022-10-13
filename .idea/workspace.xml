@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa24c815-edcc-452f-a26c-f5d3ddbb2894" name="Changes" comment="ability to exit the program">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/EnemyCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/PlayerData.java" afterDir="false" />
+    <list default="true" id="aa24c815-edcc-452f-a26c-f5d3ddbb2894" name="Changes" comment="Added an enemy creator and saver">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/EnemyCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/EnemyCreator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/EnemyData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/EnemyData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Fight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Fight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GameLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/RPG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/RPG.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +43,26 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="RPG" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.RPG" />
+      <module name="BasicRPG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RPG" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -104,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665615530038</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fixed random selector">
+      <created>1665618768142</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665618768142</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,6 +151,18 @@
     <MESSAGE value="Creating a fight class" />
     <MESSAGE value="ability to exit the program and housekeeping" />
     <MESSAGE value="ability to exit the program" />
-    <option name="LAST_COMMIT_MESSAGE" value="ability to exit the program" />
+    <MESSAGE value="Fixed random selector" />
+    <MESSAGE value="Added an enemy creator and saver" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added an enemy creator and saver" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.EOFException" package="java.io" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

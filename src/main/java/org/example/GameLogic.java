@@ -82,7 +82,10 @@ public class GameLogic {
     public void createEnemy(){
         EnemyCreator creation = new EnemyCreator();
         Enemy fresh = creation.creationEnemy();
-        System.out.println(fresh.getExamineText());
+        System.out.println("Named: " + fresh.getName());
+        System.out.println("Examine: "+ fresh.getExamineText());
+        EnemyData data = new EnemyData();
+        data.saveEnemy(fresh);
     }
 
 

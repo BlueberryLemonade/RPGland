@@ -18,8 +18,8 @@ public class EnemyCreator {
         System.out.println("How much hp?");
         hp = in.nextInt();
         System.out.println("Examine text?");
-        examineText = in.nextLine();
-
+        examineText = in.next();
+        in.nextLine();
         Enemy enemy = new Enemy(name, hp);
         enemy.setPower(power);
         enemy.setExamineText(examineText);
