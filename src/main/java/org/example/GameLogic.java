@@ -11,7 +11,8 @@ public class GameLogic {
     ArrayList<Enemy> enemiesToFight = new ArrayList<>();
 
     public void run(){
-        Player stan = Player.Player()
+        Player stan = new Player("Stan", 100,2);
+
         run(stan);
     }
 
