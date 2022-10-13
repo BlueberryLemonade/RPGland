@@ -54,11 +54,18 @@ public class RPG extends Frame implements ActionListener {
 
     }
 
+    public void close(){
+
+    }
     public void actionPerformed(ActionEvent action){
 
         if(action.getSource()==play){
             GameLogic controller = new GameLogic();
+            dispose();
             controller.run();
+        }
+        if(action.getSource()==quit){
+            dispose();
         }
     }
 }
