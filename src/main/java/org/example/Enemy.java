@@ -15,7 +15,7 @@ public class Enemy implements Serializable {
     public Enemy(){
         this.hp = 1;
         this.power = 1;
-        this.name = "The Once";
+        this.name = "The One";
         this.isAlive = true;
         this.examineText = "This being shouldn't exist";
     }

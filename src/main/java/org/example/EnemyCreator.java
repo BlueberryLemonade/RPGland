@@ -9,7 +9,7 @@ public class EnemyCreator {
         int power;
         int hp;
         String examineText;
-
+        //TODO - Verify input so letters can't be put for numbers
         Scanner in = new Scanner(System.in);
         System.out.println("What would you like to name it?");
         name = in.nextLine();

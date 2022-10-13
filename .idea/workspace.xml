@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa24c815-edcc-452f-a26c-f5d3ddbb2894" name="Changes" comment="Fixed the fight class to be void methods and calling from fight objects.">
+    <list default="true" id="aa24c815-edcc-452f-a26c-f5d3ddbb2894" name="Changes" comment="Removed strongfight from gamelogic class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/EnemyData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/EnemyData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Fight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Fight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GameController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GameLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/RPG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/RPG.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/EnemyCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/EnemyCreator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665625965847</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Removed strongfight from gamelogic class">
+      <created>1665627552518</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1665627552518</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,7 +175,8 @@
     <MESSAGE value="Added an enemy creator and saver" />
     <MESSAGE value="Added fight constructor modification for extra damage" />
     <MESSAGE value="Fixed the fight class to be void methods and calling from fight objects." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed the fight class to be void methods and calling from fight objects." />
+    <MESSAGE value="Removed strongfight from gamelogic class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed strongfight from gamelogic class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

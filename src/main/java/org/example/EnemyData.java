@@ -7,8 +7,8 @@ import java.util.List;
 
 public class EnemyData implements Serializable {
 
-
-    String PATH = "C:/Development/General/BasicRPG/data/enemies.txt";
+    //TODO - Make it so it write to the local source directory
+    String PATH = "C:/Development/General/BasicRPG/src/data/enemies.txt";
 
     public ArrayList<Enemy> loadEnemies(){
 
